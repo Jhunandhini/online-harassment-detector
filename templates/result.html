@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Harassment Detection Result</title>
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/3444752.jpg');
+            background-size: cover;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            text-align: center;
+            padding: 150px;
+            color: #f8f5f5;
+        }
+        .result {
+            background: rgba(3, 3, 3, 0.8);
+            font-size: 25px;
+            font-family: monospace;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .predict {
+            font-size: 32px;
+            font-family: monospace;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #5bc0de;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Harassment Detection Result</h1>
+    <br></br>
+    <div class="result">
+        <p><strong>Comment:</strong> {{ comment }}</p>
+    <div class="predict"><p><strong>Prediction:</strong> {{ prediction }}</p></div>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
